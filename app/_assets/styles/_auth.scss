@@ -6,7 +6,10 @@
   }
   & .authPage {
     text-align: center;
-    padding: 40px 70px;
+    padding: 20px;
+    @include sm {
+      padding: 40px 70px;
+    }
     & .starIcon {
       font-size: 24px;
     }

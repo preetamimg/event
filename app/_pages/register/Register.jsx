@@ -8,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 const Register = () => {
   return (
     <>
-      <div className="h-100 authPage d-flex flex-column justify-content-center align-items-center">
+      <div className="h-100 authPage d-flex flex-column justify-content-lg-center align-items-center">
         <Sparkle strokeWidth={2} className='starIcon'/>
         <div className="wlcmTxt">Create Account</div>
         <div className="detailTxt mb-4">Please enter your details</div>

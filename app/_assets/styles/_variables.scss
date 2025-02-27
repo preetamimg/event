@@ -1,3 +1,69 @@
 $theme1 : #155eef;
 $theme2 : #344054;
 $secondary : #667085;
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+@mixin sm {
+  @media only screen and (min-width: 576px) {
+      @content;
+  }
+}
+
+@mixin max-sm {
+  @media (max-width: 575px) {
+      @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (min-width: 768px) {
+      @content;
+  }
+}
+
+
+@mixin max-md {
+  @media (max-width: 767px) {
+      @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (min-width: 992px) {
+      @content;
+  }
+}
+
+@mixin max-lg {
+  @media (max-width: 991px) {
+      @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: 1200px) {
+      @content;
+  }
+}
+
+@mixin xxl {
+  @media only screen and (min-width: 1400px) {
+      @content;
+  }
+}
+
+@mixin xxxl {
+  @media only screen and (min-width: 1600px) {
+      @content;
+  }
+}
+
+@mixin max-450 {
+  @media (max-width: 450px) {
+      @content;
+  }
+}
