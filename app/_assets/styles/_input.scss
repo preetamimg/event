@@ -1,0 +1,70 @@
+.form-floating {
+  & .form-control {
+    border-radius: 0 !important;
+    border: 0 !important;
+    border-bottom: 2px solid black !important;
+    padding-inline: 0 !important;
+    &:is(:active, :focus, :focus-visible, :focus-within) {
+      box-shadow: none !important;
+      outline: 0 !important;
+    }
+  }
+  & label {
+    padding-inline: 0 !important;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+.customInput {
+  padding-top: 1.25rem;
+  & .form-control {
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    width: 100%;
+    &:is(:active, :focus, :focus-visible, :focus-within) {
+      box-shadow: none !important;
+      outline: 0 !important;
+      border-color: $theme1 !important;
+    }
+  }
+  & .form-label {
+    text-align: left !important;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: $theme2;
+    margin-bottom: .35rem;
+  }
+  & .eyeIcon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+  }
+}
+
+.customCheckbox {
+  margin-top: .5rem;
+  & .form-check-input {
+    margin-top: 0.35rem;    
+    &:is(:active, :focus, :focus-visible, :focus-within) {
+      box-shadow: none !important;
+      outline: 0 !important;
+      border-color: $theme1 !important;
+    }
+    &:checked {
+      border-color: $theme1;
+      background-color: $theme1;
+    }
+  }
+  & .form-check-label {
+    font-size: 14px;
+    color: $secondary;
+    cursor: pointer;
+  }
+}

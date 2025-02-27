@@ -1,0 +1,24 @@
+.authLayout {
+  height: 100%;
+  overflow: hidden;
+  & .authBanner {
+    object-position: top;
+  }
+  & .authPage {
+    text-align: center;
+    padding: 40px 70px;
+    & .starIcon {
+      font-size: 24px;
+    }
+    & .wlcmTxt {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    & .detailTxt {
+      color: $secondary;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
