@@ -29,6 +29,13 @@
       outline: 0 !important;
       border-color: $theme1 !important;
     }
+    &.inputError {
+      border-color: red !important;
+      background-color: rgba(red, 0.01);
+      &::placeholder {
+        color: red !important;
+      }
+    }
   }
   & .form-label {
     text-align: left !important;
@@ -45,6 +52,30 @@
     right: 15px;
     transform: translateY(-50%);
     display: flex;
+  }
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+  text-align: left !important;
+  margin-top: 3px;
+}
+
+.contryCodeSelect {
+  border: 0 !important;
+  position: absolute;
+  font-size: 14px;
+  color: #212529;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.375rem;
+  width: 62px;    
+  &:is(:active, :focus, :focus-visible, :focus-within) {
+    box-shadow: none !important;
+    outline: 0 !important;
+    border: 0 !important;
   }
 }
 

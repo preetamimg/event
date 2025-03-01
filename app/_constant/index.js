@@ -1,0 +1,1 @@
+export const AUTH_TOKEN = 'EVENT_AUTH_TOKEN'
